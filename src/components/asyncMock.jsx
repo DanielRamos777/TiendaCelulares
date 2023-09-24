@@ -21,10 +21,46 @@ export const getProducts = () => {
     })
 }
 
-export const getProducById = (productId) => {
+export const getProductById = (productId) => {
     return new Promise((resolve) => {
         setTimeout(() =>{
             resolve(products.find(prod.id === productId))
         }, 500)
     })
 }
+// 
+
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            const filteredProducts = products.filter((product) => product.category === categoryId);
+            resolve(filteredProducts);
+        }, 500);
+    });
+};
+
+// export const getProductsByCategory = () => {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve(products.find(prod.category === categoryId))
+//         }, 500);
+//     });
+// };
+
+
+// export const getProductsByCategory = (category) => {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//         const filteredProducts = products.filter((product) => product.category === category);
+//         resolve(filteredProducts);
+//         }, 500);
+//     });
+// };
+// getProductsByCategory('celular')
+//     .then((filteredProducts) => {
+//     console.log(filteredProducts);
+//     })
+//     .catch((error) => {
+//     console.error(error);
+// });
