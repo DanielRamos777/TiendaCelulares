@@ -18,7 +18,7 @@ function App() {
             <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
           </Routes>
         </BrowserRouter>
-              <h1>hola</h1>
+        <h2>FOOTER</h2>
       </div>
 
   )

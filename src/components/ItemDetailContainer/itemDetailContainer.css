@@ -1,0 +1,12 @@
+.ItemDetailContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: black solid 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}

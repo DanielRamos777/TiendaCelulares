@@ -6,12 +6,12 @@ function NavBar (){
     return ( 
         <nav className='NavBar'>
             <Link to='/'>
-                <h3>Ecomerce</h3>
+                <h3 className='Logo'>Streaming</h3>
             </Link >
             <div className='Categories'>
-                <NavLink to={`/category/celular1`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>celular1</NavLink>
-                <NavLink to={`/category/celular2`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>celular2</NavLink>
-                <NavLink to={`/category/celular3`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>celular3</NavLink>
+                <NavLink to={`/category/streaming1`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ofertas</NavLink>
+                <NavLink to={`/category/streaming2`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ofertas</NavLink>
+                <NavLink to={`/category/streaming3`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ofertas</NavLink>
             </div>
             <CartWidget/>
         </nav>

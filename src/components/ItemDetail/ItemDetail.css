@@ -1,0 +1,8 @@
+.ItemImg{
+    width: 70%;
+    height: 120px;
+}
+.CarItem{
+    display: flex;
+    flex-direction: column;
+}
